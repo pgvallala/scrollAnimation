@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: darkseagreen;
+    background-image: url("https://shivjipics.com/wp-content/uploads/2020/01/Dattatreya-Sahasranamam-Instagram-Image.jpg");
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+    margin: 0;
+    display: flex;
+    flex-direction: column-reverse;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.h1 {
+    margin: 10px;
+}
+
+.box {
+    background-color: darkslategray;
+    color: floralwhite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 100px;
+    margin: 15px;
+    border-radius: 10px;
+    box-shadow: gold;
+    transform: translateX(400%);
+    transition: transform 0.6s ease;
+}
+
+.box:nth-of-type(odd){
+    color:deeppink;
+    transform: translateX(-400%);
+    
+}
+
+.h2 {
+    font-size: 25px;
+}
+
+.box.show {
+    transform: translateX(0);
+}
